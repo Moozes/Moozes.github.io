@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black : #000000;
+    --black1 : #2e2e2e;
+    --black2: #343434;
+    --black3: #535353;
+    --gray1: #f4f4f4;
+    --gray2: #f6f6f6;
+    --white: #ffffff;
+
+    --title1-fs: 44px;
+    --title2-fs: 42px;
+    --title3-fs: 40px;
+    --title4-fs: 28px;
+
+    --text1-fs: 18px;
+    --text2-fs: 14px;
+    --text3-fs: 12px;
+    --text4-fs: 11px;
+}
+
+/* Utility classes */
+.title1, .title2, .title3, .title4 {
+    font-weight: bold;
+}
+.title1 {
+    font-size: var(--title1-fs);
+    color: var(--black2)
+}
+.title2 {
+    font-size: var(--title2-fs);
+    color: var(--black1)
+}
+.title3 {
+    font-size: var(--title3-fs);
+    color: var(--black2)
+}
+.title4 {
+    font-size: var(--title4-fs);
+    color: var(--black)
+}
+
+.text1 {
+    font-size: var(--text1-fs);
+}
+.text2 {
+    font-size: var(--text2-fs);
+}
+.text3 {
+    font-size: var(--text3-fs);
+}
+.text4 {
+    font-size: var(--text4-fs);
+}
+
+.btn-black {
+    padding: 10px;
+    background-color: var(--black1);
+    color: var(--white);
+    text-decoration: none;
+    display: inline-block;
+    font-size: var(--text4-fs);
+}
+
+.hover-opacity:hover {
+    opacity: 0.8;
+}
+/* Utility classes */
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.introduction {
+    display: flex;
+}
+
+.introduction .left, .introduction .right {
+    flex-basis: 50%;
+    padding: 40px;
+}
+
+.introduction .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--gray1);
+}
+
+.introduction .left .avatar {
+    width: 170px;
+}
+
+.introduction .left .email-me {
+    width: 170px;
+    text-align: center;
+}
+
+.introduction .left .icons .icon-link {
+    display: inline-block;
+}
+
+.introduction .left .icons .icon-link img {
+    width: 20px;
+}
+
+
+.introduction .right {
+}
