@@ -1,0 +1,20 @@
+
+this project was a part of Lasting dynamics academy program, where they presented us with real worl projects to implement and hold weekly meetings on to discuss progress and to present the end result infront of senior developers
+this was a special project for me, because i was able to overcome a lot of obstacles that i couldnt before such as, how to organise React code in a maintainable way?, what would be a good folder structure?,  React patterns, customize material ui, the react router syntaxe which is a lot similar to angular router configuration, reusable components, 
+also learned new stuff
+implement tests uding react testing library and jest, test isolation, testing troubleshooting
+i also used to git feature branch workflow, to familiarise my self with it, although being alone on the project i did pull requests to get a feeling of how a real team would do it
+one big thing also is that they provided us with Firgma design for the interface, it is here were a learned the actual meaning of presission and pixel perfect implementation, it is here where i learnt that i need to pay attention to line-height, exact padding, and spacing of elements, exact colors, shadows and icons and the figma design is also why i didnt consider going for responsive implementation because it wasnt specified and we only had limited time to present the end project
+
+
+what ive leanrt
+Clean maintainable code base
+git feature branch workflow
+react pattens
+theme customization
+reusable components
+automating tests
+
+
+tech used
+react, react router, formik, emotion js, material ui, context api, typescript

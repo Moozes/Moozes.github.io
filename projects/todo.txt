@@ -1,0 +1,20 @@
+This is the first project to do when learning a new technology, because it helps you familiarize with CRUD operations which is present almost in every web application,
+this app started simple where it had only add and delete operations, then with time i added other features like multiple selection, delete all, edit, assign a user to a todo which is like a managment software such as trello
+DRAG AND DROP FEATURE
+simulated loading animation using "simulateDelay(time_in_ms: number): Promise" function playing around with promises and time function, which is really usefull, because user feedback is always important, they always need to understand what is happening, dont freeze the interface and expect them to understand what is going on
+dont reload browser or use local storage to save todos
+
+what ive learnt
+simple state managment using context api
+use SCSS with react
+drag and drop api
+CRUD oeprations
+user feedback messages and animations
+responsive design
+
+tech used
+react 
+typescript
+Promises and time functions
+SCSS modules
+context api

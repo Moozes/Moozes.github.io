@@ -304,6 +304,70 @@ body {
 }
 
 
+
+.skills {
+    padding: 0px 40px 80px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+}
+
+.skills .title:nth-child(2) {
+    margin-bottom: 40px;
+}
+
+.skills .list {
+    display: flex;
+    align-items: center;
+    align-items: stretch;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.skills .list .skill-card {
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    font-size: var(--text4-fs);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .list .skill-card img {
+    width: 100%
+}
+
 footer {
-    height: 200px
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--black2);
+    color: var(--gray2);
+    font-size: var(--text4-fs);
+    padding: 40px;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* footer .icons  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+footer .icons a {
+    width: 20px;
+    display: block;
+} */
+
+footer .icons a img {
+    width: 100%;
 }
