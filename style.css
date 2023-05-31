@@ -182,7 +182,7 @@ body {
 
 .portfolio {
     background-color: var(--black2);
-    padding: 40px;
+    padding: 80px 40px;
 }
 
 .portfolio .sample-work {
@@ -224,6 +224,84 @@ body {
     margin-bottom: 10px;
 }
 
+
+
+
+
+
+.history {
+    padding: 80px 40px;
+}
+
+.history > div {
+    display: flex;
+}
+
+.history hr {
+    margin-bottom: 40px;
+}
+
+.history .left, .history .right {
+    flex-basis: 50%;
+}
+
+.history .element {
+    margin-bottom: 40px;
+}
+
+.history .top {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--text2-fs);
+    color: var(--black2);
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.history .bottom {
+    font-size: var(--text3-fs);
+    color: var(--black2);
+    font-weight: lighter;
+}
+
+.history .experience .right {
+    /* margin-bottom: 40px; */
+}
+
+.history .education .right {
+    /* margin-bottom: 40px; */
+}
+
+
+.history .education .right .element .date {
+    width: 165px;
+}
+
+.history .certificates .right {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.history .certificates .right .certificate {
+    display: block;
+    text-decoration: none;
+}
+
+.history .certificates .right .certificate img.ld {
+    width: 100px;
+}
+
+.history .certificates .right .certificate img.coursera {
+    width: 200px;
+}
+
+.history .certificates .right .certificate p {
+    font-size: var(--text3-fs);
+    color: var(--black2);
+    font-weight: lighter;
+}
 
 
 footer {
