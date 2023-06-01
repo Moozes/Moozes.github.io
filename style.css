@@ -102,12 +102,20 @@ body {
 /* Utility classes */
 
 .container {
-  width: 80%;
+  width: 1000px;
   margin: auto;
 }
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: 100%;
+  }
+}
 
+
+/* --------------------------------------------------- */
 .introduction {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .introduction .left {
@@ -115,7 +123,8 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: var(--gray1);
-  flex-basis: 50%;
+  flex-basis: 300px;
+  flex-grow: 1;
   padding: 40px;
 }
 
@@ -154,7 +163,8 @@ body {
 .introduction .right {
   display: flex;
   flex-direction: column;
-  flex-basis: 50%;
+  flex-basis: 300px;
+  flex-grow: 1;
   padding: 80px 40px;
 }
 
@@ -179,10 +189,22 @@ body {
 }
 
 .introduction .right .actions a {
-  /* width: 200px; */
   flex-basis: 50%;
-  /* margin-bottom: 40px; */
 }
+
+@media only screen and (max-width: 600px) {
+  .introduction .right {
+    text-align: center;
+  }
+  .introduction .right .summary {
+    margin-bottom: 40px;
+  }
+}
+
+/* --------------------------------------------------- */
+
+
+
 
 .portfolio {
   background-color: var(--black2);
@@ -201,6 +223,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .portfolio .projects .project {
@@ -209,6 +233,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
 
 .portfolio .projects .project img {
   width: 100%;
@@ -224,8 +249,36 @@ body {
 
 .portfolio .projects .project a {
   width: 100%;
+}
+
+.portfolio .projects .project a.description-btn {
   margin-bottom: 10px;
 }
+
+.portfolio .projects hr {
+  display: none;
+}
+
+@media only screen and (max-width: 705px) {
+  .portfolio .projects {
+    flex-direction: column;
+  }
+
+  .portfolio .projects .project {
+    width: 250px;
+  }
+
+  .portfolio .projects hr {
+    width: 100%;
+    display: block;
+  }
+}
+/* --------------------------------------------------- */
+
+
+
+
+
 
 .history {
   padding: 80px 40px;
@@ -233,15 +286,20 @@ body {
 
 .history > div {
   display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .history hr {
   margin-bottom: 40px;
 }
 
-.history .left,
+.history .left {
+  flex-grow: 1;
+}
 .history .right {
-  flex-basis: 50%;
+  /* flex-basis: 50%; */
+  width: 550px;
 }
 
 .history .element {
@@ -251,6 +309,7 @@ body {
 .history .top {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   font-size: var(--text2-fs);
   color: var(--black2);
   font-weight: bold;
@@ -263,28 +322,28 @@ body {
   font-weight: lighter;
 }
 
-.history .experience .right {
-  /* margin-bottom: 40px; */
-}
-
-.history .education .right {
-  /* margin-bottom: 40px; */
-}
-
 .history .education .right .element .date {
   width: 165px;
 }
 
 .history .certificates .right {
   display: flex;
-  align-items: center;
+  /* align-items: flex-end; */
   justify-content: space-evenly;
+  flex-wrap: wrap;
   text-align: center;
+  gap: 10px;
 }
 
 .history .certificates .right .certificate {
   display: block;
   text-decoration: none;
+  width: 208px;
+  flex-grow: 1;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+  border: 1px solid var(--black3);
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .history .certificates .right .certificate img.ld {
@@ -301,9 +360,32 @@ body {
   font-weight: lighter;
 }
 
+@media only screen and (max-width: 880px) {
+  .history > div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* gap: 20px; */
+  }
+
+  .history > div .title3 {
+    align-self: flex-start;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .history .right {
+    width: 100%;
+  }
+}
+/* --------------------------------------------------- */
+
+
+
+
+
 .skills {
   padding: 0px 40px 80px;
-  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
 }
 
 .skills .title:nth-child(2) {
@@ -334,6 +416,7 @@ body {
 .skills .list .skill-card img {
   width: 100%;
 }
+/* --------------------------------------------------- */
 
 
 
@@ -386,6 +469,7 @@ body {
 
 
 }
+/* --------------------------------------------------- */
 
 
 
@@ -409,18 +493,6 @@ footer a {
   margin-bottom: 5px;
   display: block;
 }
-
-/* footer .icons  {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 5px;
-}
-
-footer .icons a {
-    width: 20px;
-    display: block;
-} */
 
 footer .icons a img {
   width: 100%;
