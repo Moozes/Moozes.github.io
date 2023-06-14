@@ -421,10 +421,16 @@ body {
 
 
 
-.description {
+body.description {
+    background-color: var(--gray1);
+    min-height: 100vh;
+}
+
+div.description {
     width: 80%;
     margin: auto;
     padding: 40px 0;
+    background-color: var(--gray1);
 }
 
 .description .title4 {

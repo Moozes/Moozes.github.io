@@ -1,13 +1,15 @@
 This is the first project to do when learning a new technology, because it helps you familiarize with CRUD operations which is present almost in every web application,
-this app started simple where it had only add and delete operations, then with time i added other features like multiple selection, delete all, edit, assign a user to a todo which is like a managment software such as trello
-DRAG AND DROP FEATURE
-simulated loading animation using "simulateDelay(time_in_ms: number): Promise" function playing around with promises and time function, which is really usefull, because user feedback is always important, they always need to understand what is happening, dont freeze the interface and expect them to understand what is going on
-dont reload browser or use local storage to save todos
+this app started simple where it had only add and delete operations, then with time i added other features like
+edit, filter but todo status (All, active, or completed), and Delete all completed todos
+because user feedback is always important, they always need to understand what is happening, dont freeze the interface and expect them to understand what is going on
+
+This is the first project to do when learning a new technology, because it helps you familiarize with *CRUD operations which is present almost in every web application, this app started simple where it had only *add and *delete operations, then with time i added other features like *edit, *filter by todo status (All, active, or completed), and *Delete all completed todos, and because *user feedback is always important, i added a feedback message component that appears to confirm that the action taken by the user was successful.
+
+
 
 what ive learnt
 simple state managment using context api
 use SCSS with react and SCSS modules
-drag and drop api
 CRUD oeprations managment
 user feedback messages and animations
 responsive design
@@ -15,6 +17,7 @@ responsive design
 tech used
 react 
 typescript
-Promises and time functions
 SCSS modules
 context api
+
+DRAG AND DROP FEATURE
