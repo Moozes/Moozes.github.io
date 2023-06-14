@@ -6,9 +6,9 @@ dont reload browser or use local storage to save todos
 
 what ive learnt
 simple state managment using context api
-use SCSS with react
+use SCSS with react and SCSS modules
 drag and drop api
-CRUD oeprations
+CRUD oeprations managment
 user feedback messages and animations
 responsive design
 
