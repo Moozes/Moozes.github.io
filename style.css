@@ -552,8 +552,15 @@ div.description {
     transform: scale(1.2);
 }
 
-.description .project-display .left a {
-    width: 100%;
+
+.description .project-display .left .buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.description .project-display .left .buttons a {
+  flex-grow: 1;
+  width: 100%;
 }
 
 .description .project-display .right ul {
